@@ -1,3 +1,4 @@
+from archivo import lines
 # Creamos la clase node
 class node:
     def __init__(self, data = None, next = None):
@@ -53,10 +54,41 @@ class linked_list:
         while node != None:
             print(node.data, end =" => ")
             node = node.next
+    
+    def mostrar_lista( self ):
+        node = self.head #node será la cabeza
+        while node != None: #mientras node sea diferente a nada
+            print(node.data, end =" => ") #se mostrarán los nodes
+            #end = para que me muesre enseguida el proximo node
+            node = node.next #y node será el siguiente
 
+    
 
+    def enlazada_txt(self):
+            nume = lines
+            s = linked_list()
+            print(lines)
+            
+            lista = []
+            v = 0
+            for i in range(len(nume)):
+                
+                lista.append(i)
+                v = nume[i]
+                s.mostrar_lista(v)
+
+           
+
+              
 s = linked_list() # Instancia de la clase
-s.add_at_front(5) # Agregamos un elemento al frente del nodo
+            
+a = float(input("digite un numero para agregar a la lista enblazada: "))
+                        
+
+s.add_at_front(a) # Agregamos un elemento al frente del nodo
 s.add_at_end(8) # Agregamos un elemento al final del nodo
 s.add_at_front(9) # Agregamos otro elemento al frente del nodo
-s.print_list() # Imprimimos la lista de nodos
+s.print_list() # Imprimimos la lista de nodos 
+ 
+
+
